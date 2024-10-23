@@ -9,10 +9,15 @@
 
   <h1>Reproducir Video desde GitHub</h1>
   
-  <video width="640" height="360" controls autoplay playsinline>
+  <video id="myVideo" width="640" height="360" controls muted playsinline>
     <source src="https://github.com/CarlosLugones07/TFI/raw/main/BCIAO.mp4" type="video/mp4">
     Tu navegador no soporta el elemento <code>video</code>.
   </video>
+
+  <script>
+    const video = document.getElementById('myVideo');
+    video.play();
+  </script>
 
 </body>
 </html>
